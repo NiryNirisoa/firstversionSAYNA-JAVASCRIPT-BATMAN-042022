@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 200;
+    background-color: #000000;
+}
+
+.conteneur {
+    font-family: 'Space Grotesk', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+:root {
+    --primary-ad-color: #f1c530;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+}
+
+.brand-mobile {
+    display: none;
+}
+
+
+/* Design Navigation */
+
+#header-top nav {
+    background-color: var(--black-ad-color);
+    padding: 15px 0;
+}
+
+#header-top nav .navigbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-top nav .brand img,
+footer .brand img {
+    padding-left: 20px;
+}
+
+#header-top nav .brand img:nth-child(2),
+footer .brand img:nth-child(2) {
+    padding-bottom: 15px;
+}
+
+#header-top nav .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-top nav .menu ul li {
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+#header-top nav .menu ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--white-ad-color);
+}
+
+.mediasocialnav {
+    position: absolute;
+    top: 43%;
+    right: 3%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-icones {
+    margin-left: 40px;
+}
+
+
+/* La partie Hero Design */
+
+#hero1 {
+    background-color: #000000;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+}
+
+#hero div {
+    color: var(--white-ad-color);
+}
+
+#hero .titre {
+    font-family: 'Rajdhani';
+    font-size: 5em;
+    font-weight: 100;
+}
+
+#hero .description {
+    font-weight: lighter;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#hero .box {
+    position: relative;
+    top: 25%;
+}
+
+
+/* La section des cartes Design */
+
+#card-section {
+    background-color: var(--primary-ad-color);
+    padding-top: 40px;
+}
+
+#card-section .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#card-section .card-hero {
+    border: 6px solid var(--black-ad-color);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px var(--black-ad-color);
+}
+
+#card-section .card-hero .card-image {
+    background-color: var(--white-ad-color);
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-section .card-hero:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    color: var(--white-ad-color);
+    background-color: var(--black-ad-color);
+}
+
+
+/* Ajout des images par carte */
+
+#card-section .card-hero .card-image-1 {
+    background-image: url(../img/img8.png);
+}
+
+#card-section .card-hero .card-image-2 {
+    background-image: url(../img/img9.png);
+}
+
+#card-section .card-hero .card-image-3 {
+    background-image: url(../img/img10.png);
+}
+
+
+/* Design carte contenu */
+
+#card-section .card-hero .card-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+#card-section .card-hero .card-content {
+    padding: 15px;
+    font-size: 15px;
+}
+
+#card-section .card-hero .card-content p {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+#card-section .card-hero .card-content span {
+    font-weight: bold;
+}
+
+
+/* Design Footer  */
+
+footer {
+    background-color: var(--black-ad-color);
+    padding: 20px 0;
+    margin-top: 30%;
+}
+
+.footer {
+    color: var(--white-ad-color);
+    text-align: center;
+    font-size: 13px;
+}
+
+.navigation-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
+footer .media {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-icones {
+    background-color: var(--black-ad-color);
+    color: var(--white-ad-color);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+footer .media img {
+    background-color: var(--black-ad-color);
+    color: var(--white-ad-color);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+footer .copyright {
+    padding: 10px;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+    nav .menu {
+        display: none;
+    }
+    #hero .titre {
+        font-family: 'Rajdhani';
+        font-size: 5em;
+        font-weight: 100;
+    }
+    #hero .description {
+        font-weight: bold;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .conteneur {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #header-top {
+        display: none;
+    }
+    .brand-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20%;
+    }
+    #hero .titre {
+        font-family: 'Rajdhani';
+        font-size: 2em;
+        font-weight: 100;
+    }
+    #hero .description {
+        font-weight: bold;
+        font-size: 0.7em;
+    }
+    /* Footer mobile*/
+    .navigation-footer {
+        display: block;
+    }
+    footer .copyright {
+        font-size: 10px;
+    }
+}
+
+
+/*index css*/
+
+:root {
+    --primary-ad-color: #b11313;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+    --blue-color: #114c92;
+    --btn-color: to right #EDDEBF, #19587D;
+}
+
+.arrow {
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+#hero {
+    background-image: url("../img/Bathome1.png");
+    background-color: var(--black-ad-color);
+    height: 870px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+}
+
+.box {
+    padding-top: 7%;
+}
+
+.titre {
+    margin-bottom: 50px;
+}
+
+#batmens,
+#batvillains {
+    background-color: var(--black-ad-color);
+    padding-top: 10%;
+}
+
+#batmens h1,
+#batvillains h1 {
+    font-size: 35px;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.button1 {
+    border: none;
+    border-radius: 0;
+    color: var(--btn-color);
+    padding: 15px 30px;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4));
+}
+
+.cta .button2 {
+    color: var(--white-ad-color);
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4));
+    border: none;
+    border-radius: 0;
+    padding: 15px 30px;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-unique ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Rajdhani';
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+input[type=submit] {
+    width: 375px;
+    border-radius: 0px;
+    padding: 5px;
+    margin: 10px auto;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(137, 0, 8, 0.6));
+}
+
+input[type=submit] {
+    border: none;
+    width: 200px;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(137, 0, 8, 0.6));
+    padding: 10px 20px;
+}
+
+#newsletter {
+    padding: 20px 0px;
+    padding-left: 300px;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4));
+}
+
+.newsletter-formulaire {
+    margin-top: 70px;
+}
+
+.newsletter-formulaire input[type=text],
+.newsletter-formulaire input[type=email] {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    width: 1000px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    background-color: #ffffff00;
+    border-color: white;
+}
+
+.formselect {
+    width: 20px;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+/*slide2*/
+
+#boxes {
+    content: "";
+    display: table;
+    clear: both;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#column1 {
+    float: left;
+    height: 470px;
+    width: 25%;
+    padding: 0 10px;
+    background-color: black;
+}
+
+#column2 {
+    float: left;
+    height: 470px;
+    width: 15%;
+    background-color: #a1edcc;
+}
+
+#column3 {
+    float: left;
+    height: 470px;
+    width: 20%;
+    padding: 0 10px;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    background-color: #c4c4c4;
+    width: 40%;
+}
+
+#column4 {
+    float: left;
+    height: 470px;
+    width: 20%;
+    padding: 0 10px;
+    background-color: black;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+}
+
+
+/*style*/
+
+.video {
+    text-align: center;
+    background-color: #000000;
+    padding: 30px 0px;
+}
+
+.citation {
+    padding-top: 10%;
+}
+
+.rounds {
+    padding-top: 5%;
+}
+
+.round {
+    border: solid 1px blue;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 0px 20px;
+}
+
+.round1 {
+    background-color: #114c92;
+    border: solid 1px blue;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin: 1px 20px;
+}
+
+.firstp {
+    font-size: 2rem;
+}
+
+.secundp {
+    font-size: 1.3rem;
+    color: grey;
+    padding-top: 3%;
+}
+
+
+/* essai slide */
+
+#slider {
+    position: relative;
+    width: 1900px;
+    height: 500px;
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+}
+
+#slider img {
+    width: 2200px;
+    height: 700px;
+    margin-top: 213px;
+    margin-bottom: -213px;
+}
+
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 100px;
+    color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin-top: 800px;
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+    opacity: 1;
+}
+
+.actor {
+    display: none;
+    width: 50%;
+}
+
+
+/*game*/
+
+#hero2 {
+    background-image: url("../img/Batgame1.png");
+    background-color: var(--black-ad-color);
+    height: 870px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+}
